@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjelajah Pariwisata Ranah Minang</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <!-- Logo Institusi -->
+            <div class="header-logos">
+                <img src="asset/images.png" class="logo-small">
+            </div>
+            <!-- Logo dan Judul Utama -->
+            <div class="header-brand">
+                <div class="logo-main">
+                    <svg viewBox="0 0 32 32" class="logo-svg">
+                        <circle cx="16" cy="16" r="15" fill="url(#gradient1)"/>
+                        <circle cx="16" cy="16" r="12" fill="url(#gradient2)"/>
+                        <!-- Rumah Gadang -->
+                        <path d="M4 28V18L16 8L28 18V28H4Z" stroke="white" stroke-width="1.2" fill="rgba(255,255,255,0.1)"/>
+                        <!-- Atap Gonjong -->
+                        <path d="M16 8C16 8 12 11 12 13C12 15 20 15 20 13C20 11 16 8 16 8Z" fill="white"/>
+                        <path d="M8 12C8 12 6 14 6 15C6 16 10 16 10 15C10 14 8 12 8 12Z" fill="white"/>
+                        <path d="M24 12C24 12 22 14 22 15C22 16 26 16 26 15C26 14 24 12 24 12Z" fill="white"/>
+                        <!-- Tanduk Kerbau -->
+                        <path d="M10 6C10 6 8 4 6 4C4 4 4 6 6 8C8 10 10 8 10 6Z" fill="white"/>
+                        <path d="M22 6C22 6 24 4 26 4C28 4 28 6 26 8C24 10 22 8 22 6Z" fill="white"/>
+                        <!-- Detail -->
+                        <rect x="14" y="22" width="4" height="6" fill="white"/>
+                        <rect x="9" y="20" width="3" height="3" fill="white"/>
+                        <rect x="20" y="20" width="3" height="3" fill="white"/>
+                        <circle cx="16" cy="15" r="1" fill="white"/>
+                        
+                        <defs>
+                            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#f59e0b"/>
+                                <stop offset="50%" style="stop-color:#ef4444"/>
+                                <stop offset="100%" style="stop-color:#dc2626"/>
+                            </linearGradient>
+                            <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#fbbf24"/>
+                                <stop offset="100%" style="stop-color:#ef4444"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <h1>Penjelajah Pariwisata</h1>
+                    <p>Kota Padang</p>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="nav">
+                <button class="nav-btn active" data-section="beranda">
+                    <i class="fas fa-home"></i>
+                    <span>Beranda</span>
+                </button>
+                <button class="nav-btn" data-section="peta">
+                    <i class="fas fa-map"></i>
+                    <span>Peta</span>
+                </button>
+                <button class="nav-btn" data-section="informasi">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Informasi</span>
+                </button>
+                <button class="nav-btn" data-section="profil">
+                    <i class="fas fa-user"></i>
+                    <span>Profil</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Beranda Section -->
+        <section id="beranda" class="section active">
+            <!-- Hero -->
+            <div class="hero">
+                <div class="hero-content">
+                    <h1><i class="fas fa-sparkles"></i> Selamat Datang di Padang <i class="fas fa-sparkles"></i></h1>
+                    <p>Jelajahi keindahan alam, budaya, dan kuliner khas Ranah Minang yang memukau</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-compass"></i> Mulai Jelajahi
+                        </button>
+                        <button class="btn btn-outline">
+                            <i class="fas fa-camera"></i> Foto
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-icon blue">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>24</h3>
+                    <p>Destinasi Wisata</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon orange">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>50+</h3>
+                    <p>Kuliner</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon green">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>25+</h3>
+                    <p>Hotel & Resort</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon pink">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>1M+</h3>
+                    <p>Wisatawan/Tahun</p>
+                </div>
+            </div>
+
+            <!-- Destinasi -->
+            <div class="section-content">
+                <h2>Destinasi Populer</h2>
+                <p>Temukan tempat-tempat menakjubkan di Padang dan sekitarnya yang wajib dikunjungi dengan pengalaman wisata yang tak terlupakan</p>
+                
+                <div class="destinations">
+                    <div class="destination-card">
+                        <div class="card-image" style="background: none; padding: 0; overflow: hidden; height: 240px;">
+                            <img src="asset/626cfc2ce02a7.jpg" alt="Sunset di Pantai Air Manis" class="destination-img">
+                            <span class="badge">Pantai</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Pantai Air Manis</h3>
+                            <p>Pantai indah dengan legenda Malin Kundang dan batu yang menyerupai kapal. Destinasi favorit untuk menikmati sunset dan fotografi.</p>
+                            <button class="btn btn-small">Lihat Detail</button>
+                        </div>
+                    </div>
+
+                     <div class="destination-card">
+    <div class="card-image" style="background: none; padding: 0; overflow: hidden; height: 240px;">
+        <img src="asset/west-sumatera-mosque.jpg" alt="Masjid Raya Sumatera Barat" class="destination-img">
+        <span class="badge">Budaya</span>
+        <div class="rating">
+            <i class="fas fa-star"></i>
+            <span>4.8</span>
+        </div>
+    </div>
+    <div class="card-content">
+        <h3>Mesjid Raya Sumatera Barat</h3>
+        <p>Masjid ini dikenal karena desain arsitekturnya yang unik dan modern, terinspirasi dari bentuk rumah gadang dan kain sunting Minangkabau yang sedang terbentang.</p>
+        <button class="btn btn-small">Lihat Detail</button>
+    </div>
+</div>
+
+                    <div class="destination-card">
+                        <div class="card-image" style="background: none; padding: 0; overflow: hidden; height: 240px;">
+                            <img src="asset/Lubuak-Rantiang-jadi-salah-satu-destinasi-wisata-alam-di-Sumatera-Barat-3103141254.webp" alt="Lubuak Rantiang" class="destination-img">
+                            <span class="badge">Alam</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.5</span>
+                            </div>
+
+                        </div>
+                        <div class="card-content">
+                            <h3>Lubuak Rantiang</h3>
+                            <p>Tempat ini dikenal karena keindahan air terjun alami yang dikelilingi hutan tropis dan bebatuan besar, menciptakan suasana sejuk dan asri.</p>
+                            <button class="btn btn-small">Lihat Detail</button>
+                        </div>
+                    </div>
+
+                    <div class="destination-card">
+                        <div class="card-image" style="background: none; padding: 0; overflow: hidden; height: 240px;">
+                            <img src="asset/Museum-Adityawarman.webp" alt="Museum Adityawarman dengan arsitektur Minangkabau" class="destination-img">
+                            <span class="badge">Budaya</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Museum Adityawarman</h3>
+                            <p>Museum ini menyimpan lebih dari 6.000 koleksi benda budaya, termasuk pakaian adat, senjata tradisional, perhiasan, alat musik, dan peninggalan sejarah dari Minangkabau, Mentawai, dan etnis lainnya di Sumbar.</p>
+                            <button class="btn btn-small">Lihat Detail</button>
+                        </div>
+                    </div>
+
+                    <div class="destination-card">
+                        <div class="card-image" style="background: none; padding: 0; overflow: hidden; height: 240px;">
+                            <img src="asset/Pantai-Padang.webp" alt="Pantai Padang dengan landmark PADANG dan sunset" class="destination-img">
+                            <span class="badge">Pantai</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.3</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Pantai Padang</h3>
+                            <p>Pantai urban dengan sunset yang indah di pusat kota Padang, perfect untuk evening walk dan kuliner seafood.</p>
+                            <button class="btn btn-small">Lihat Detail</button>
+                        </div>
+                    </div>
+
+                    <div class="destination-card">
+                        <div class="card-image" style="background: none; padding: 0; overflow: hidden; height: 240px;">
+                            <img src="asset/h6fwl7b3lwl4e4a.jpeg" alt="Gua dengan pencahayaan biru yang menakjubkan di Ngarai Sianok" class="destination-img">
+                            <span class="badge">Alam</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Goa Kelelawar Padayok</h3>
+                            <p>Goa ini menawarkan suasana petualangan yang menantang dengan pemandangan stalaktit dan stalagmit yang masih alami.</p>
+                            <button class="btn btn-small">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kuliner -->
+            <div class="kuliner-section">
+                <h2>Kuliner Khas Padang</h2>
+                <p>Nikmati cita rasa autentik masakan Padang yang terkenal dengan bumbu rempah yang kaya dan cita rasa yang tak terlupakan</p>
+                
+                <div class="foods">
+                    <div class="food-card">
+    <div class="food-image rendang" style="background: none; padding: 0; overflow: hidden;">
+        <img src="asset/resep-rendang-filosofi-rendang-makna-rendang-arti-rendang-rendang-dari-mana-makanan-indonesia-filosofi-9cde86371d7fc78c91ae80a6ffab250e-e0b9344da253b8e653bd42c7df03d6d9_600x400.jpg" alt="Rendang daging sapi dengan bumbu rempah khas Padang" class="food-img">
+    </div>
+    <div class="food-content">
+        <h3>Rendang</h3>
+        <p>Masakan daging yang dimasak dengan santan dan rempah-rempah, dinobatkan sebagai makanan terlezat di dunia</p>
+        <div class="price">Rp 25.000 - 35.000</div>
+    </div>
+</div>
+
+                    <div class="food-card">
+                        <div class="food-image sate" style="background: none; padding: 0; overflow: hidden;">
+                            <img src="asset/ae348f1bff19ec6f336caa2d03740c68.jpeg" alt="Sate Padang" style="width: 180%; height: 220%; object-fit: cover;">
+                        </div>
+                        <div class="food-content">
+                            <h3>Sate Padang</h3>
+                            <p>Sate dengan kuah kental berwarna kuning yang khas dengan bumbu rempah yang meresap sempurna</p>
+                            <div class="price">Rp 15.000 - 25.000</div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <div class="food-image dendeng" style="background: none; padding: 0; overflow: hidden;">
+                            <img src="asset/resep-dendeng-basah-balado_11.jpeg" alt="Dendeng Balado Padang" style="width: 180%; height: 220%; object-fit: cover;">
+                        </div>
+                        <div class="food-content">
+                            <h3>Dendeng Balado</h3>
+                            <p>Daging dendeng yang dimasak dengan sambal balado pedas, perpaduan gurih dan pedas yang sempurna</p>
+                            <div class="price">Rp 20.000 - 30.000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Peta Section -->
+        <section id="peta" class="section">
+            <div class="section-content">
+                <h2>Peta Wisata Padang</h2>
+                <p>Temukan lokasi destinasi wisata di Kota Padang navigasi yang mudah dan informasi lengkap</p>
+                
+                <div class="map-container">
+    <div class="map-header">
+        <h3><i class="fas fa-map"></i> Peta Interaktif Wisata Padang</h3>
+        <p>Jelajahi lokasi wisata dengan peta interaktif yang dilengkapi pencarian dan informasi detail</p>
+    </div>
+    <div class="map-wrapper">
+        <iframe 
+            src="map.html" 
+            width="100%" 
+            height="500" 
+            frameborder="0" 
+            style="border-radius: var(--radius-xl); box-shadow: var(--shadow-lg);">
+        </iframe>
+    </div>
+    <div class="map-features">
+        <div class="feature-item">
+            <i class="fas fa-search"></i>
+            <span>Pencarian Lokasi</span>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-layer-group"></i>
+            <span>Multiple Layers</span>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>24 Destinasi</span>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-ruler"></i>
+            <span>Pengukuran Jarak</span>
+        </div>
+    </div>
+</div>
+
+                <div class="location-info">
+                    <div class="info-card">
+                        <h3><i class="fas fa-map-marker-alt"></i> Lokasi Utama</h3>
+                        <div class="location-list">
+                            <div class="location-item">
+                                <span>Pantai Air Manis</span>
+                                <span>15 km dari pusat kota</span>
+                            </div>
+                            <div class="location-item">
+                                <span>Mesjid Raya Sumatera Barat</span>
+                                <span>Pusat Kota</span>
+                            </div>
+                            <div class="location-item">
+                                <span>Museum Adityawarman</span>
+                                <span>Pusat Kota</span>
+                            </div>
+                            <div class="location-item">
+                                <span>Pantai Padang</span>
+                                <span>Pusat kota</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="fas fa-route"></i> Transportasi</h3>
+                        <div class="transport-list">
+                            <div class="transport-item">
+                                <h4>Bandara</h4>
+                                <p>Bandara Internasional Minangkabau (PDG)</p>
+                            </div>
+                            <div class="transport-item">
+                                <h4>Stasiun KAI</h4>
+                                <p>Stasiun KAI Simpang Haru</p>
+                            </div>
+                            <div class="transport-item">
+                                <h4>Pelabuhan</h4>
+                                <p>Pelabuhan Teluk Bayur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Informasi Section -->
+        <section id="informasi" class="section">
+            <div class="section-content">
+                <h2>Informasi Wisata</h2>
+                <p>Panduan lengkap untuk perjalanan wisata Anda di Padang dengan informasi terkini dan tips bermanfaat</p>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Waktu Terbaik</h3>
+                        <p>Waktu terbaik mengunjungi Padang adalah pada musim kemarau (Mei - September) dengan cuaca yang ideal</p>
+                        <ul>
+                            <li>Cuaca cerah dan tidak hujan</li>
+                            <li>Suhu 24-32°C</li>
+                            <li>Ideal untuk aktivitas outdoor</li>
+                            <li>Visibility terbaik untuk fotografi</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Kuliner</h3>
+                        <p>Jangan lewatkan kuliner khas Padang yang terkenal dengan cita rasa autentik dan bumbu yang kaya</p>
+                        <ul>
+                            <li>RM Lamun Ombak </li>
+                            <li>Sate Manang Kabau</li>
+                            <li>Rendang Rajo Rajo Rm. Simpang Jondul</li>
+                            <li>Es Durian Ganti Nan Lamo</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Penginapan</h3>
+                        <p>Berbagai pilihan penginapan sesuai budget dengan fasilitas modern dan pelayanan terbaik</p>
+                        <ul>
+                            <li>Hotel Santika Premiere Padang</li>
+                            <li>The ZHM Premiere Hotel Padang</li>
+                            <li>Mercure Padang</li>
+                            <li>Amaris Hotel Padang</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tips-section">
+                    <h3>Tips Perjalanan</h3>
+                    <div class="tips-grid">
+                        <div class="tip-card">
+                            <h4><i class="fas fa-check-circle"></i> Persiapan</h4>
+                            <ul>
+                                <li>Bawa pakaian ringan dan nyaman</li>
+                                <li>Siapkan obat-obatan pribadi</li>
+                                <li>Bawa kamera untuk dokumentasi</li>
+                                <li>Download aplikasi maps offline</li>
+                                <li>Siapkan powerbank untuk gadget</li>
+                            </ul>
+                        </div>
+                        <div class="tip-card">
+                            <h4><i class="fas fa-heart"></i> Budaya Lokal</h4>
+                            <ul>
+                                <li>Hormati adat istiadat Minangkabau</li>
+                                <li>Berpakaian sopan saat berkunjung</li>
+                                <li>Pelajari sedikit bahasa Minang</li>
+                                <li>Coba makanan lokal dengan porsi kecil dulu</li>
+                                <li>Berinteraksi dengan ramah kepada penduduk lokal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profil Section -->
+        <section id="profil" class="section">
+            <div class="section-content">
+                <h2>Tentang Kota Padang</h2>
+                <p>Mengenal lebih dekat ibu kota Sumatera Barat dengan sejarah yang kaya dan budaya yang memukau</p>
+                
+                <div class="profile-grid">
+                    <div class="profile-card">
+                        <h3>Sejarah Singkat</h3>
+                        <div class="profile-content">
+                            <div class="photo-frame">
+                                <div class="frame-border">
+                                    <div class="frame-image" style="background: none; padding: 0; overflow: hidden;">
+                                        <img src="asset/Bank_Indonesia_Lama_Padang_atas.jpg.jpeg" alt="Gedung Bank Indonesia Lama Padang - Arsitektur Kolonial Belanda" style="width: 180%; height: 120%; object-fit: cover;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-text">
+                                <p>Padang adalah ibu kota provinsi Sumatera Barat yang memiliki sejarah panjang sebagai pusat perdagangan dan pelabuhan penting di pantai barat Sumatera. Kota ini dikenal sebagai pintu gerbang ke Ranah Minang dengan budaya Minangkabau yang kaya dan tradisi yang masih terjaga hingga kini.</p>
+                                <p>Padang juga terkenal dengan kulinernya yang telah menyebar ke seluruh Indonesia dan dunia, terutama rendang yang dinobatkan sebagai makanan terlezat di dunia oleh CNN International pada tahun 2011.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-card">
+                        <h3>Data Kota</h3>
+                        <div class="profile-content">
+                            <div class="photo-frame">
+                                <div class="frame-border">
+                                    <div class="frame-image" style="background: none; padding: 0; overflow: hidden;">
+                                        <img src="asset/administrasi-kota-padang-a1.jpg" alt="Peta Kota Padang" style="width: 180%; height: 160%; object-fit: cover;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-list">
+                                <div class="data-item">
+                                    <span>Luas Wilayah</span>
+                                    <span>694,96 km²</span>
+                                </div>
+                                <div class="data-item">
+                                    <span>Populasi</span>
+                                    <span>±900.000 jiwa</span>
+                                </div>
+                                <div class="data-item">
+                                    <span>Bahasa</span>
+                                    <span>Indonesia, Minang</span>
+                                </div>
+                                <div class="data-item">
+                                    <span>Mata Uang</span>
+                                    <span>Rupiah (IDR)</span>
+                                </div>
+                                <div class="data-item">
+                                    <span>Zona Waktu</span>
+                                    <span>WIB (UTC+7)</span>
+                                </div>
+                                <div class="data-item">
+                                    <span>Kode Area</span>
+                                    <span>25000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-section">
+                    <h3>Profil Pembuat</h3>
+                    <div class="contact-grid">
+                        <div class="contact-image">
+                            <div class="photo-frame large">
+                                <div class="frame-border">
+                                    <div class="frame-image" style="background: none; padding: 0; overflow: hidden;">
+                                        <img src="asset/WhatsApp Image 2024-03-22 at 20.18.40_8e6f21cd.jpg" style="width: 140%; height: 160%; object-fit: cover;">
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>Najla Azzahra</h4>
+                            <p>Mahasiswi Aktif Sains Informasi Geografi Angkatan 2023 Universitas Pendidikan Indonesia </p>
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4>Nomor Telphone</h4>
+                                    <p>+628 2214005246</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>azzahranajla2005@upi.edu</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4>Alamat</h4>
+                                    <p>Jl. Gegerkalong Girang, Isola, Kec. Sukasari, Kota Bandung, Jawa Barat</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-main">
+                            <svg viewBox="0 0 32 32" class="logo-svg">
+                                <circle cx="16" cy="16" r="15" fill="url(#gradient1)"/>
+                                <circle cx="16" cy="16" r="12" fill="url(#gradient2)"/>
+                                <!-- Rumah Gadang -->
+                                <path d="M4 28V18L16 8L28 18V28H4Z" stroke="white" stroke-width="1.2" fill="rgba(255,255,255,0.1)"/>
+                                <!-- Atap Gonjong -->
+                                <path d="M16 8C16 8 12 11 12 13C12 15 20 15 20 13C20 11 16 8 16 8Z" fill="white"/>
+                                <path d="M8 12C8 12 6 14 6 15C6 16 10 16 10 15C10 14 8 12 8 12Z" fill="white"/>
+                                <path d="M24 12C24 12 22 14 22 15C22 16 26 16 26 15C26 14 24 12 24 12Z" fill="white"/>
+                                <!-- Tanduk Kerbau -->
+                                <path d="M10 6C10 6 8 4 6 4C4 4 4 6 6 8C8 10 10 8 10 6Z" fill="white"/>
+                                <path d="M22 6C22 6 24 4 26 4C28 4 28 6 26 8C24 10 22 8 22 6Z" fill="white"/>
+                                <!-- Detail -->
+                                <rect x="14" y="22" width="4" height="6" fill="white"/>
+                                <rect x="9" y="20" width="3" height="3" fill="white"/>
+                                <rect x="20" y="20" width="3" height="3" fill="white"/>
+                                <circle cx="16" cy="15" r="1" fill="white"/>
+                                
+                                <defs>
+                                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#f59e0b"/>
+                                        <stop offset="50%" style="stop-color:#ef4444"/>
+                                        <stop offset="100%" style="stop-color:#dc2626"/>
+                                    </linearGradient>
+                                    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#fbbf24"/>
+                                        <stop offset="100%" style="stop-color:#ef4444"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Penjelajah Pariwisata</h3>
+                            <p>Kota Padang</p>
+                        </div>
+                    </div>
+                    <p>Portal wisata Kota Padang. Jelajahi keindahan Ranah Minang bersama kami dan temukan pengalaman tak terlupakan dengan kearifan budaya Minangkabau yang autentik.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Destinasi Populer</h4>
+                    <ul>
+                        <li><span class="bullet"></span>Pantai Air Manis</li>
+                        <li><span class="bullet"></span>Mesjid Raya Sumatera Barat</li>
+                        <li><span class="bullet"></span>Museum Adityawarman</li>
+                        <li><span class="bullet"></span>Pantai Padang</li>
+                        <li><span class="bullet"></span>Lubuak Rantiang</li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Kontak</h4>
+                    <div class="contact-list">
+                        <p><span>📞</span> (+628) 2214005246</p>
+                        <p><span>✉️</span> azzahranajla2005@upi.edu</p>
+                        <p><span>📍</span> Jl. Gegerkalong Girang, Isola, Kec. Sukasari, Kota Bandung, Jawa Barat</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="upi-logo">
+                    <img src="asset/logoupimerah.png">
+                </div>
+                <div class="footer-text">
+                    <p>© 2025 Penjelajah Pariwisata Kota Padang. Semua hak dilindungi.</p>
+                    <p>Dikembangkan dengan teknologi modern untuk memajukan pariwisata dan budaya Minangkabau</p>
+                    <p>Dalam kerjasama dengan Universitas Pendidikan Indonesia</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
